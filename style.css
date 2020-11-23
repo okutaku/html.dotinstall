@@ -1,0 +1,245 @@
+@charset "utf-8";
+
+html{
+  height: 100%;
+}
+body{
+  font-family: Verdana, 'Arial', sans-serif;
+  color: skyblue;
+  font-size: 12;
+  border: 1px solid skyblue;
+}
+/* スタイルの継承の有無はmdn 
+line-height:の継承は単位ありとなしとで差がでるありだと、親要素の文字幅、なしだとそれぞれにあわせた文字幅*/
+
+body{
+  font-size: 14;
+  line-height: 1;
+}
+
+h1 {
+  border: inherit;
+  text-align: center;
+  font-weight: normal;
+  text-decoration: line-through;
+  clear: right;
+}
+
+h1::before,h2::after{
+  content: attr(data-subtitle);
+}
+p {
+  font-weight: bold;
+  text-decoration: underline;
+  font-size: 16px;
+  line-height: 48px;
+  background-color: aliceblue;
+}
+
+[target]{
+  font-size: 20px;
+}
+
+[href*="html"]{
+  font-size: 15px;
+}
+
+#about{
+  color: black;
+}
+
+.icon {
+  float:right;
+}
+
+.info {
+  color: red;
+}
+
+img{
+  vertical-align: middle;
+}
+
+ul {
+  /* list-style-type: circle;
+  list-style-position: inside; 
+  まとめてかける*/
+  list-style: circle inside none;
+}
+
+ol{
+  list-style-type: lower-alpha;
+}
+
+.box1{
+  background-color: orange;
+  width: 200px;
+  height: 200px;
+  overflow: scroll;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.box2{
+  background-color: tomato;
+  width:50%;
+  height:50%;
+  overflow: hidden;
+  border: 1px solid blue;
+  border-radius: 10px;
+  padding:10px;
+  margin:10px;
+}
+
+.box3{
+  background-color: rgb(202, 220, 228);
+  width: 50px;
+  height: 50px;
+  display:inline-block;
+}
+
+.box4{
+  background-color: red;
+  width: 50px;
+  height: 50px;
+  positon:relative;
+  top:30px;
+  left:30px;
+  z-index: 2;
+}
+
+.rect{
+  width: 10px;
+  height: 10px;
+  background-color: lime;
+  position: relative;
+  top: 5px;
+  right: 5px;
+  z-index: 1;
+}
+
+.box5{
+  background-color: yellow;
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+}
+
+.box6{
+  background-color: green;
+  width: 50px;
+  height: 50px;
+}
+
+.box7{
+  background-color: blue;
+  width: calc((100% - 40px) / 3);
+  height: 50px;
+  box-shadow: 10px 5px rgba(0, 0, 0, 0.3) ;
+  text-shadow: 10px 5px rgba(0, 0, 0, 0.3) ;
+}
+
+.box8{
+  box-sizing: border-box;
+  background-color:red;
+  width: calc((100% - 40px) / 3);
+  height: 50px;
+  box-shadow: 10px 5px 3px rgba(0, 0, 0, 0.3) ;
+  text-shadow: 10px 5px 3px rgba(0, 0, 0, 0.3) ;
+  border: 1px solid rgb(4, 0, 255);
+  margin: 0 auto;
+}
+
+.box9{
+  background-color:green;
+  width: calc((100% - 40px) / 3);
+  height: 50px;
+  box-shadow: 10px 5px 3px 10px rgba(0, 0, 0, 0.3) ;
+  margin-left: auto;
+}
+
+.btn{
+  width: 100px;
+  background-color:skyblue;
+  text-align: center;
+  padding: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.btn:hover{
+  opacity: 0.8;
+}
+
+.canDo > :nth-child(even){
+  background-color: pink;
+}
+
+.canDo > :nth-child(odd){
+  background-color: aqua;
+}
+
+.canDo >h2:nth-of-type(even) {
+  background-color: rgb(255, 127, 206);
+}
+
+li:not(:empty) {
+  background-color: rgb(156, 114, 114);
+}
+/* 詳細度によって左右される
+id class、属性、擬似クラス、要素 */
+
+.example{
+  margin: 0px;
+  flex-direction: column;
+}
+.container {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+/* flexboxではmarginの相殺が起きない */
+.box{
+  width: 100px;
+  height: 100px;
+}
+
+
+.box10{
+  background-color:red;
+  flex: 1;
+}
+
+.box11{
+  background-color:blue;
+  width: 100px;
+  order: -1;
+}
+
+.box12{
+  background-color:yellow;
+}
+
+.boxHead13{
+  height: 200px;
+  background-color:blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.boxMain{
+  width: 100px;
+  height: 100px;
+  background-color:green;
+}
+
+
+nav ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}

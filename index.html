@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="看護師のブログです">
+    <title>おくたくのさいと</title>
+    <link rel="icon" href="イラスト.png">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <h1>おくたくのサイト</h1>
+    <p class="info">cssの練習</p>
+    <p>どうもこんばんは<img src="イラスト.png" width="100" height="100" alt="おくたくのロゴです">あいこんです
+    </p>
+  </header>
+  <button.disabled>
+    
+    <nav>
+      <ul>
+        <li><a href="#about">このサービスについて</a></li>
+        <li><a href="#future">主な特徴</a></li>
+        <li><a href="#how">使いかた</a></li>
+      </ul>
+    </nav>
+<header>
+  <img src="イラスト.png" width="100" height="100" alt="おくたくのロゴです" class="icon">
+  <h1 data-subtitle="-Main Title">おくたくのサイト</h1>
+  <h2 data-subtitle="- Sub Title">おくたくの雑談サイトです</h2>
+    <section>
+      <h2 id="about">このサービスについて</h2>
+      <p>1<strong>すごいサービスです</strong></p>
+      
+      <blockquote cite="#">
+        <p>人間とは人間である</p>
+      </blockquote>
+      
+      <hr>
+      <p>ここで一句</p>
+      <p>&lt;br&gt;タグは次のように使います</p>
+      
+      <pre>
+        <code>
+          &lt;p&gt;
+          今すぐに, &lt;br&gt;
+          はじめてみよう、&lt;br&gt;
+          HTML
+          &lt;p&gt;
+        </code>
+      </pre>
+      <!-- 基本的にbrなどは文字に構成的意味を付け加えるだけ。装飾するのはCSSでおこなう。文字実態参照に詳しく書いてある-->
+
+    </section>
+    
+    <section>
+      <!--リストの作りかた-->
+      <h2 id="future">主な特徴</h2>
+      <p>２</p>
+      <ul>
+        <li>すごい</li>
+        <li>やばい</li>
+        <li>つよい</li>
+      </ul>
+    </section>
+    
+    <section>
+      <h2 id="how">使い方</h2>
+      <p>３</p>
+      <ol>
+        <li>動画を見る</li>
+        <li>コードを書く</li>
+        <li>コードを改造する<a href="https://dotinstall.com" target="_blank">ドットインストール</a>です「<a href="members.html" target="_blank">Members</a>と<a href="lessons/index.html">レッスン一覧もご覧ください</a></li>
+      </ol>
+    </section>
+    
+    <section>
+      <h2>よく聞かれる質問</h2>
+      <p>４</p>
+      <dl>
+        <dt>質問A</dt>
+        <dd>回答A</dd>
+        <dt>質問B</dt>
+        <dd>回答B</dd>
+      </dl>
+    </section>
+    
+    <section>
+      <!-- 表の作りかた td:data th;header tr:table row-->
+      <h2>沿革</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>年数</th>
+            <th>出来事</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>2014</td>
+            <td>会社設立</td>
+          </tr>
+          <tr>
+            <td>2016</td>
+            <td>ブログ開始</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    
+    <h1>記事一覧</h1>
+
+    <article>
+      <h1>記事のタイトル</h1>
+      <p>お知らせですお知らせです</p>
+      <footer>投稿日：<time>2020-11-21</time>by @okutaku</footer>
+    </article>
+
+    <article>
+      <h1><span>記事</span>のタイトル</h1>
+      <div>
+        <p>お知らせですお知らせです</p>
+        <footer>投稿日：<time>2020-11-21</time>by @okutaku</footer>
+      </div>
+    </article>
+
+    <aside>
+      <h2>広告です</h2>
+      <p>広告広告広告広告</p>
+    </aside>
+
+    <!-- <input type="text">
+    <input type="text" value="hello"> -->
+    <label>名前<input type="text"></label>
+
+    <input type="password">
+    <!-- <textarea></textarea>
+    <textarea>hello</textarea> -->
+
+    <label for="color">好きな色</label>
+    <select id="color">
+      <option>色１</option>
+      <option>色２</option>
+      <option>色３</option>
+      <option selected>色４</option>
+    </select>
+
+    <section>
+      <div class="box1">nandekonnakonokanninanndekonnankotninanndekonannakotni
+        <div class="box2">Box2 uouououououououououououououououououououououououououououououououoou
+        </div>
+        </div>
+      <div class="box3">Box3</div>
+      <div class="box3">Box3</div>
+      <div class="box3">Box3</div>
+      <div class="box4">
+        <div class="rect"></div>
+      </div>
+      <div class="box5">Box5</div>
+      <div class="box6">Box6</div>
+      <div class="box7">Box7</div>
+      <div class="box8">Box8</div>
+      <div class="box9">Box9</div>
+    </section>
+
+    <fieldset>
+      <legend>お使いのスマホ（複数選択可）</legend>
+      <label><input type="checkbox">iphone</label>
+      <label><input type="checkbox" checked>android</label>
+      <label><input type="checkbox">その他</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>一番好きなスマホ</legend>
+      <label><input type="radio" name="phone">iphone</label>
+      <label><input type="radio" name="phone" checked>android</label>
+      <label><input type="radio" name="phone">その他</label>
+    </fieldset>
+
+    <p><input type="color"></p>
+    <p><input type="date"></p>
+    <p><input type="number"></p>
+    <p><input type="range"></p>
+    <!-- ユーザーが使うブラウザがクロムの最新版だけ適応される -->
+
+    <input type="button" value="OK">
+    <button>OK</button>
+
+    <input type="button" value="OK" disabled>
+    <button disabled>OK</button>
+
+    <div class="btn">OK?</div>
+    <div class="canDo">
+    <h1>見出し</h1>
+    <p>you can do it</p>
+    <h2>見出し</h2>
+    <p>you can do it</p>
+    <h2>見出し</h2>
+    <p>you can do it</p>
+    <h2>見出し</h2>
+    <p>you can do it</p>
+    <li>a</li>
+    <li></li>
+    <li>c</li>
+    </div>
+    
+    <div class="example">
+      <div class="container">
+          <div class="box box10">main</div>
+        <div class="box box11">nav</div>
+        <div class="box box12">aside</div>
+      </div>
+    </div>
+
+    <div class="boxHead13">
+        <div class="boxMain"></div>
+    </div>
+
+    <form action="process.php" method="post">
+      <label>担当者名<input type="text" name="username"></label>
+      <label>タスク<input type="text" name="task"></label>
+      <button>追加</button>
+    </form>
+    </main>
+
+    <footer>
+      <p><a href="#top">トップ</a></p>
+    </footer>
+  </body>
+</html>

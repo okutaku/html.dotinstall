@@ -1,0 +1,153 @@
+body{
+  margin: 0;
+}
+
+.container {
+  display:grid;
+
+  /* grid-template-columns: 100px 1fr 2fr 1fr 100px; */
+
+  /* grid-template-columns: 100px 100px 100px; */
+  /* grid-template-rows: 100px 100px; */
+/* gap: 10px 20px; */
+  /* grid-template-columns: repeat(4, 100px) */
+  /* grid-template-columns: repeat(auto-fill, 100px) ; */
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-auto-rows: 100px;
+}
+.box1{
+  background-color:hsl(0, 60%, 60%);
+  grid-row: 2;
+  grid-column: 2 /-1;
+}
+
+.box2{
+  background-color:hsl(60, 60%, 60%);
+}
+
+.box3{
+  background-color:hsl(120, 60%, 60%);
+}
+
+.box4{
+  background-color:hsl(180, 60%, 60%);
+}
+
+.box5{
+  background-color:hsl(240, 60%, 60%);
+}
+
+.container2{
+  display:grid;
+  grid-template-columns:100px [target-start] 100px 100px [target-end];
+  /* gridlineに名前をつけてコンテンツをおく */
+  grid-template-rows: 100px 100px;
+  margin-top: 20px;
+}
+.boxa{
+  background-color:hsl(0, 60%, 60%);
+  grid-column: target;
+  grid-row: 2;
+}
+
+.boxb{
+  background-color:hsl(60, 60%, 60%);
+}
+
+.boxc{
+  background-color:hsl(120, 60%, 60%);
+}
+
+.container3{
+  display:grid;
+  
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(4, 100px);
+  margin-top: 20px;
+  grid-auto-flow:column dense;
+  grid-auto-columns: 100px;
+}
+.box6{
+  background-color:hsl(0, 60%, 60%);
+}
+
+.box7{
+  background-color:hsl(60, 60%, 60%);
+  grid-row: span 2;
+  grid-column: span 2 ;
+}
+
+.box8{
+  background-color:hsl(120, 60%, 60%);
+}
+
+.container4{
+  display:grid;
+  
+  grid-template-columns: repeat(5, 100px);
+  grid-template-rows: repeat(4, 100px);
+  grid-template-areas: 
+  "r r r y y "
+  "r r r y y "
+  "c c c y y "
+  "c c c y y "
+  "c c c y y ";
+  /* それぞれの要素がばらけては表示されない何個も作れない */
+}
+
+
+.box9{
+  background-color:hsl(0, 60%, 60%);
+  grid-area: r;
+}
+
+.box10{
+  background-color:hsl(60, 60%, 60%);
+  grid-area: y;
+}
+
+.box11{
+  background-color:hsl(120, 60%, 60%);
+  grid-area: c;
+}
+
+.container5{
+  display:grid;
+  
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(2, 100px);
+  width: 400px;
+  height: 300px;
+  background-color: #eee;
+
+  justify-content: center;
+  align-content: center;
+
+  justify-items: center;
+  align-items: center;
+}
+
+.container5 > div{
+  width: 50px;
+  height: 50px;
+}
+
+.box12{
+  background-color:hsl(0, 60%, 60%);
+  justify-self: start;
+  align-self: start;
+}
+
+.box13{
+  background-color:hsl(60, 60%, 60%);
+}
+
+.box14{
+  background-color:hsl(120, 60%, 60%);
+}
+.box15{
+  background-color:hsl(180, 60%, 60%);
+}
+.box16{
+  background-color:hsl(240, 60%, 60%);
+}
